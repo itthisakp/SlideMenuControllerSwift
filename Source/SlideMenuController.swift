@@ -425,7 +425,7 @@ open class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
                     track(.leftFlickClose)
 
                 }
-            case UIGestureRecognizerState.failed, UIGestureRecognizerState.possible:
+            case .failed, .possible:
                 break
         @unknown default: break
         }
